@@ -137,50 +137,50 @@ header.menu-open {
     
 }
 
-/* Estilos gerais para o conteúdo principal */
+
 .main-content {
     padding: 40px 20px;
-    background-color: #f5f5f5; /* Cor de fundo clara para destacar o conteúdo */
+    background-color: #f5f5f5; 
     display: flex;
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    justify-content: center; 
 }
 
-/* Estilo para o container-sobre */
+
 .container-sobre {
-    max-width: 800px; /* Define uma largura máxima para o container */
-    width: 100%; /* Garante que o container ocupe toda a largura disponível */
-    background-color: #fff; /* Cor de fundo branca para o conteúdo */
-    padding: 30px; /* Adiciona espaço interno */
-    border-radius: 8px; /* Bordas arredondadas para um visual mais moderno */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para destaque */
-    text-align: left; /* Alinha o texto à esquerda para uma leitura mais fácil */
+    max-width: 800px; 
+    width: 100%; 
+    background-color: #fff; 
+    padding: 30px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: left; 
 }
 
 .container-sobre h1 {
-    font-size: 2.5em; /* Aumenta o tamanho do título */
-    color: #29ABE2; /* Cor para o título */
-    margin-bottom: 20px; /* Espaço abaixo do título */
+    font-size: 2.5em; 
+    color: #29ABE2; 
+    margin-bottom: 20px; 
 }
 
 .container-sobre p {
-    font-size: 1.125em; /* Aumenta o tamanho da fonte do parágrafo */
-    color: #333; /* Cor do texto dos parágrafos */
-    line-height: 1.6; /* Aumenta o espaçamento entre linhas para melhorar a legibilidade */
-    margin-bottom: 20px; /* Espaço abaixo dos parágrafos */
+    font-size: 1.125em; 
+    color: #333; 
+    line-height: 1.6; 
+    margin-bottom: 20px; 
 }
 
-/* Estilos responsivos para telas menores */
+
 @media screen and (max-width: 768px) {
     .container-sobre {
-        padding: 20px; /* Reduz o padding em telas menores */
+        padding: 20px; 
     }
 
     .container-sobre h1 {
-        font-size: 2em; /* Ajusta o tamanho do título em telas menores */
+        font-size: 2em; 
     }
 
     .container-sobre p {
-        font-size: 1em; /* Ajusta o tamanho da fonte dos parágrafos em telas menores */
+        font-size: 1em; 
     }
 }
 
@@ -203,13 +203,13 @@ footer {
     justify-items: center;
 }
 .footer-logo {
-    width: 300px; /* Ajuste o tamanho conforme necessário */
+    width: 300px; 
     height: auto;
 }
 
 #footer_contacts {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
+    justify-content: center; 
     flex-direction: column;
     padding: 10px;
 }

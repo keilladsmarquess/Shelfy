@@ -32,8 +32,8 @@ body {
 
 header {
     display: flex;
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    align-items: center; /* Alinha o conteúdo verticalmente */
+    justify-content: center; 
+    align-items: center; 
     width: 100%;
     padding: 10px;
     background-color: #29ABE2;
@@ -178,7 +178,7 @@ header.menu-open {
 }
 
 .conteudo {
-    flex: 1; /* Permite que o conteúdo se ajuste conforme o contêiner */
+    flex: 1; 
     background-color: #ffffff;
     border-radius: 10px;
     margin-left: 20px;
@@ -228,38 +228,37 @@ header.menu-open {
 
 .interessante {
     padding: 20px;
-    margin: 20px 0; /* Remove margens laterais para ocupar toda a largura */
-    width: 100%; /* Faz com que a seção ocupe 100% da largura disponível */
-    max-width: 1000px; /* Limita a largura máxima para evitar que fique muito grande em telas largas */
-    margin-left: auto; /* Centraliza horizontalmente */
-    margin-right: auto; /* Centraliza horizontalmente */
+    margin: 20px 0; 
+    width: 100%; 
+    text-align: center;
+    margin-left: auto; 
+    margin-right: auto; 
     text-align: center;
 }
 
 .interessante h2 {
-    font-size: 1.75em; /* Tamanho do título para destaque elegante */
-    color: #333; /* Cor escura para contraste */
-    margin-bottom: 15px; /* Espaçamento abaixo do título */
-    text-align: center; /* Centraliza o título para melhor alinhamento */
-}
+    font-size: 1.75em; 
+    color: #333; 
+    margin-bottom: 15px; /
+    }
 
 .interessante p {
-    color: #555; /* Cor do texto mais escura para melhor leitura */
-    line-height: 1.8; /* Espaçamento entre linhas melhorado */
-    margin: 0 0 20px; /* Espaço abaixo do parágrafo mais generoso */
-    text-align: center; /* Centraliza o texto para um visual mais uniforme */
+    color: #555; 
+    line-height: 1.8; 
+    margin: 0 0 20px; 
+    text-align: center; 
 }
 
 .interessante a {
-    text-decoration: none; /* Remove o sublinhado dos links */
-    color: #007bff; /* Cor padrão dos links */
-    font-weight: bold; /* Destaca os links com negrito */
-    transition: color 0.3s ease, text-decoration 0.3s ease; /* Transição suave para efeitos de hover */
+    text-decoration: none;
+    color: #007bff; 
+    font-weight: bold; 
+    transition: color 0.3s ease, text-decoration 0.3s ease; 
 }
 
 .interessante a:hover {
-    text-decoration: underline; /* Adiciona sublinhado no hover */
-    color: #0056b3; /* Cor do link ao passar o mouse */
+    text-decoration: underline; 
+    color: #0056b3; 
 }
 
 
@@ -283,13 +282,13 @@ footer {
     justify-items: center;
 }
 .footer-logo {
-    width: 300px; /* Ajuste o tamanho conforme necessário */
+    width: 300px; 
     height: auto;
 }
 
 #footer_contacts {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
+    justify-content: center; 
     flex-direction: column;
     padding: 10px;
 }

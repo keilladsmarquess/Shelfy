@@ -27,8 +27,8 @@ body {
 
 header {
     display: flex;
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    align-items: center; /* Alinha o conteúdo verticalmente */
+    justify-content: center; 
+    align-items: center; 
     width: 100%;
     padding: 10px;
     background-color: #29ABE2;

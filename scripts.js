@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var menuBox = document.getElementById('menu-box');
     var header = document.getElementById('main-header');
 
-    if (menuBox && header) { // Verifique se ambos os elementos existem
+    if (menuBox && header) { 
         menuBox.addEventListener('change', function() {
             if (menuBox.checked) {
                 header.classList.add('menu-open');
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
         console.error('Elemento "menu-box" ou "main-header" não encontrado.');
     }
 
-    // Código para o slider automático
+   
     let count = 1;
     document.getElementById("radio1").checked = true; 
 
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("radio" + count).checked = true; 
     }
 
-    // Código para o slider manual
+  
     let slideIndex = 0;
 
     function showSlide(index) {
