@@ -257,8 +257,19 @@ header.menu-open {
 .navegue-categoria{
     display: flex;
     justify-content: center; 
-    font-size: 1 em; 
+    font-size: 1.25em; 
     padding: 30px; 
+}
+
+.navegacao-cat {
+    max-width: 800px; 
+    width: 100%; 
+    background-color: #fff; 
+    padding: 30px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+    margin: 0 auto; /* Centraliza horizontalmente */
 }
 
 .categorias {
@@ -275,10 +286,10 @@ header.menu-open {
 
 .category {
     flex: 1 1 25%; 
-    max-width: 25%; 
     margin: 15px;
     box-sizing: border-box;
     text-align: center;
+    align-self: flex-end;
 }
 
 .category img {
@@ -289,9 +300,9 @@ header.menu-open {
 }
 
 .category h2 {
-    font-size: 24px;
     color: #000;
     padding: 10px;
+    white-space: nowrap; /* Evita quebra de linha */
 }
 
 .category i {
@@ -302,7 +313,7 @@ header.menu-open {
 }
 
 .category i:hover{
-    color: #1C1C1C;
+    color: #363636 ;
 }
 
 .clique-aqui {
@@ -359,8 +370,8 @@ header.menu-open {
 }
 
 .clique-img img {
-    width: 330px; /* Define uma largura fixa */
-    height: 330px; /* Define uma altura fixa igual à largura para garantir que a imagem seja quadrada */
+    width: 24vw; 
+    height: 24vw; 
     border-radius: 50%;
     border: 6px solid #fffbfb;
     box-shadow:  5px 5px 10px 7px rgba(0, 0, 0, 0.1);
