@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shelfy</title>
+    <link rel="icon" type="image/x-icon" href="ShelfyImagens/head.logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="addLivros.css">
+</head>
+<body>
+    <header id="main-header">
+        <nav class="menu">
+            <input type="checkbox" id="menu-box">
+            <label for="menu-box" class="menu-lines">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="biblioteca.html">Biblioteca</a></li>
+                <li><a href="addLivro.html">Adicionar Livro</a></li>
+                <li><a href="metas_desafios.html">Metas e desafios</a></li>
+                <li><a href="sobre.html">Sobre o Shelfy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="card">
+                <div class="livro">
+                    <img src="ShelfyImagens/Livros/Livro1.jpg" alt="Orgulho e Preconceito">
+    
+                    <div class="tipo-livro">
+                        <button class="btn-fisico" onclick="changeColor(this)">Físico</button>
+                        <button class="btn-ebook" onclick="changeColor(this)">E-book</button>
+                    </div>
+    
+                    <div class="tag-container">
+                        <span class="tag">Tag</span>
+                        <span class="tag-text">Clásssicos</span>
+                    </div>
+                </div>
+    
+                <div class="livro-info">
+                    <!--<div class="info">
+                        <h2>Orgulho e Preconceito</h2>
+                        <h3>Autor(a)</h3>
+                        <p></p>
+                        <hr>
+                        <h3>Gênero</h3>
+                        <p></p>
+                        <hr>
+                        <h3>Páginas</h3>
+                        <p></p>
+                        <hr>
+                    </div>-->
+
+                    <div class="info">
+                        <h2>Orgulho e Preconceito</h2>
+                    
+                        <h3>Autor(a)</h3>
+                        <!--<p id="autorTexto" class="placeholder" onclick="editarCampo('autor')">Clique para adicionar</p>
+                        <input type="text" id="autorInput" class="hidden" onblur="salvarTexto('autor')">
+                        <hr>-->
+                        <div id="autor-container">
+                            <p id="autor-text" onclick="editAutor()">Clique para adicionar...</p>
+                            <textarea id="autor-input" onblur="saveAutor()" style="display: none;"></textarea>
+                            <hr>
+                        </div>
+                    
+                        <h3>Gênero</h3>
+                        <div id="genero-container">
+                            <p id="genero-text" onclick="editGenero()">Clique para adicionar...</p>
+                            <textarea id="genero-input" onblur="saveGenero()" style="display: none;"></textarea>
+                            <hr>
+                        </div>
+
+                        <h3>Páginas</h3>
+                        <div id="pag-container">
+                            <p id="pag-text" onclick="editPag()">Clique para adicionar...</p>
+                            <textarea id="pag-input" onblur="savePag()" style="display: none;"></textarea>
+                            <hr>
+                        </div>
+                        <!--<p id="generoTexto" class="placeholder" onclick="editarCampo('genero')">Clique para adicionar</p>
+                        <input type="text" id="generoInput" class="hidden" onblur="salvarTexto('genero')">
+                        <hr>
+                    
+                        <h3>Páginas</h3>
+                        <p id="paginasTexto" class="placeholder" onclick="editarCampo('paginas')">Clique para adicionar</p>
+                        <input type="number" id="paginasInput" class="hidden" onblur="salvarTexto('paginas')">
+                        <hr>-->
+                    </div>
+                    
+                    <button class="botao-salvar" onclick="salvarInformacoes()">Adicionar à biblioteca</button>
+                </div>   
+            </div>
+        </section> 
+    </main>
+    
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <img src="ShelfyImagens/LogoShelfy.png" alt="Shelfy logo" class="footer-logo">
+            </div>
+            
+            <ul class="footer-list">
+                <li>
+                    <h3>Mapa do site</h3>
+                </li>
+                <li>
+                    <a href="index.html" class="footer-link">Página Inicial</a>
+                </li>
+                <li>
+                    <a href="biblioteca.html" class="footer-link">Biblioteca</a>
+                </li>
+                <li>
+                    <a href="addLivro.html" class="footer-link">Adicionar livro</a>
+                </li>
+                <li>
+                    <a href="metas_desafios.html" class="footer-link">Metas e Desafios</a>
+                </li>
+                <li>
+                    <a href="sobre.html" class="footer-link">Sobre o Shelfy</a>
+                </li>
+            </ul>
+    
+            <div class="footer_subscribe">
+                <h3>Fale conosco</h3>
+                <p>Contato: (74) 9 9999-9999</p>
+                <p>E-mail: shelfy@gmail.com</p>
+            </div>
+        </div>
+    
+        <div id="footer_copyright">
+            &#169; 2025 direitos reservados
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script src="add.js"></script>
+    
+</body>
+</html>

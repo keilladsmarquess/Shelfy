@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shelfy</title>
+    <link rel="icon" type="image/x-icon" href="ShelfyImagens/head.logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="livros.css">
+</head>
+<body>
+
+    <header id="main-header">
+        <nav class="menu">
+            <input type="checkbox" id="menu-box">
+            <label for="menu-box" class="menu-lines">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="biblioteca.html">Biblioteca</a></li>
+                <li><a href="addLivro.html">Adicionar Livro</a></li>
+                <li><a href="metas_desafios.html">Metas e desafios</a></li>
+                <li><a href="sobre.html">Sobre o Shelfy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container">
+            <aside class="perfil-rapido">
+                <img src="ShelfyImagens/Livros/cem-anos-de-solidao.png" alt="Cem anos de solidão">
+                <div class="info">
+                    <hr>
+                    <h1>Cem anos de solidão</h1>
+                    <h4>Gabriel García Márquez</h4>
+                    <div class="caracteristicas">
+                        <p>Realismo mágico</p>
+                        <p>Livro físico</p>
+                        <p>432 páginas</p>
+                    </div>
+                    <hr>
+                    <div class="estrelas">
+                        <img class="estrela" src="ShelfyImagens/estrela-amarela.png" alt="Estrela amarela">
+                        <img class="estrela" src="ShelfyImagens/estrela-amarela.png" alt="Estrela amarela">
+                        <img class="estrela" src="ShelfyImagens/estrela-amarela.png" alt="Estrela amarela">
+                        <img class="estrela" src="ShelfyImagens/estrela-amarela.png" alt="Estrela amarela">
+                        <img class="estrela" src="ShelfyImagens/estrela-cinza.png" alt="Estrela cinza">
+                    </div>
+                    <hr>
+                </div>
+            </aside>
+    
+            <main class="conteudo">
+                <h1>Cem anos de solisão</h1>
+                <p class="data-publicacao">Atualizado pela última vez em 18.04.2024.</p>
+                <div class="avaliacao">
+                    <section class="avaliacao-livro">
+                        <div class="status">
+                            <button class="btn-lido" onclick="changeColor()">Lido</button>
+                            <button class="btn-salvar" onclick="salvarInformacoes()">Salvar</button>
+                            <div id="message" style="display: none">Informações salvas!</div>
+                        </div>
+    
+                        <div class="tag-container">
+                            <span class="tag">Tag</span>
+                            <span class="tag-text">Mágico</span>
+                        </div>
+    
+                        <h1 class="conteudo-text">O que eu achei do <strong>livro</strong></h1>
+                        <p> Complexo e fascinante. Você se perde na árvore genealógica, mas
+                            a escrita é tão rica que vale a pena.
+                            </p>
+                        <hr>                                        
+                        
+                        <h1 class="conteudo-text">Minha frase <strong>favorita</strong></h1>
+                        <div class="quote-box">
+                            <h4>“O passado é uma mentira que não tem sentido."</h4>
+                        </div>
+    
+                        <h1 class="conteudo-text">A <strong>música</strong> que não saia da minha cabeça enquanto eu <strong>lia</strong></h1>
+                        <div class="music-box">
+                            <span><strong>“Macondo” – Óscar Chávez</strong></span>
+                            <img class="player-img" src="ShelfyImagens/player.png" alt="Player de música">
+                        </div>                       
+                    </section>
+                </div>
+            </main>
+        </div>
+    </section>
+        
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <img src="ShelfyImagens/LogoShelfy.png" alt="Shelfy logo" class="footer-logo">
+            </div>
+            
+            <ul class="footer-list">
+                <li>
+                    <h3>Mapa do site</h3>
+                </li>
+                <li>
+                    <a href="index.html" class="footer-link">Página Inicial</a>
+                </li>
+                <li>
+                    <a href="biblioteca.html" class="footer-link">Biblioteca</a>
+                </li>
+                <li>
+                    <a href="addLivro.html" class="footer-link">Adicionar livro</a>
+                </li>
+                <li>
+                    <a href="metas_desafios.html" class="footer-link">Metas e Desafios</a>
+                </li>
+                <li>
+                    <a href="sobre.html" class="footer-link">Sobre o Shelfy</a>
+                </li>
+            </ul>
+    
+            <div class="footer_subscribe">
+                <h3>Fale conosco</h3>
+                <p>Contato: (74) 9 9999-9999</p>
+                <p>E-mail: shelfy@gmail.com</p>
+            </div>
+        </div>
+    
+        <div id="footer_copyright">
+            &#169; 2025 direitos reservados
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script src="livros.js"></script>
+</body>
+</html>

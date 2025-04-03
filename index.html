@@ -3,15 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SEMENTES DO BRASIL</title>
+    <title>Shelfy</title>
+    <link rel="icon" type="image/x-icon" href="ShelfyImagens/head.logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header id="main-header">
-        <div class="logo-header">
-            <img src="imagens/logo.png" alt="Sementes do Brasil">
-        </div>
         <nav class="menu">
             <input type="checkbox" id="menu-box">
             <label for="menu-box" class="menu-lines">
@@ -21,9 +19,10 @@
             </label>
             <ul>
                 <li><a href="index.html">Página Inicial</a></li>
-                <li><a href="conteudos.html">Conteúdo</a></li>
-                <li><a href="dicas.html">Dicas</a></li>
-                <li><a href="sobre.html">Sobre nós</a></li>
+                <li><a href="biblioteca.html">Biblioteca</a></li>
+                <li><a href="addLivro.html">Adicionar Livro</a></li>
+                <li><a href="metas_desafios.html">Metas e desafios</a></li>
+                <li><a href="sobre.html">Sobre o Shelfy</a></li>
             </ul>
         </nav>
     </header>
@@ -36,16 +35,16 @@
                 <input type="radio" name="radio-btn" id="radio3">
                 <input type="radio" name="radio-btn" id="radio4">
                 <div class="slide first">
-                    <img src="imagens/1.png" alt="Imagem 1">
+                    <img src="ShelfyImagens/slide/1.png" alt="Imagem 1">
                 </div>
                 <div class="slide">
-                    <img src="imagens/2.png" alt="Imagem 2">
+                    <img src="ShelfyImagens/slide/2.png" alt="Imagem 2">
                 </div>
                 <div class="slide">
-                    <img src="imagens/3.png" alt="Imagem 3">
+                    <img src="ShelfyImagens/slide/3.png" alt="Imagem 3">
                 </div>
                 <div class="slide">
-                    <img src="imagens/4.png" alt="Imagem 4">
+                    <img src="ShelfyImagens/slide/4.png" alt="Imagem 4">
                 </div>
                 <div class="navigation-auto">
                     <div class="auto-btn1"></div>
@@ -61,91 +60,133 @@
                 <label for="radio4" class="manual-btn"></label>
             </div>
         </div>
-    </div>
-
-    
-        <div class="navegacao-cat">
-
-
-        <div class="navegue-categoria">
-            <h1>Navegue por categoria</h1>
-        </div>
-        <section class="categories">
-            <div class="category">
-                <a href="conteudos.html#gastronomia"><i class="fas fa-utensils"></i></a>
-                <h2>Gastronomia</h2>
-            </div>
-            <div class="category">
-                <a href="conteudos.html#arte-decoracao"><i class="fas fa-paint-brush"></i></a>
-                <h2>Arte e Decoração</h2>
-            </div>
-            <div class="category">
-                <a href="conteudos.html#tecnologia"><i class="fas fa-robot"></i></a>
-                <h2>Tecnologia</h2>
-            </div>
-            <div class="category">
-                <a href="conteudos.html#maquiagem"><i class="fas fa-magic"></i></a>
-                <h2>Maquiagem</h2>
-            </div>
-            <div class="category">
-                <a href="conteudos.html#musica"><i class="fas fa-music"></i></a>
-                <h2>Música</h2>
-            </div>
-            <div class="category">
-                <a href="conteudos.html#perfumaria-cosmeticos"><i class="fas fa-spray-can"></i></a>
-                <h2>Perfumaria e Cosméticos</h2>
-            </div>
-        </section>
-
- </div>
-
-
-        
-        
+        <div class="bem-vindo">
+            <h1>Bem Vindo ao Shelfy!</h1>
+        </div> 
+        <!--<div class="navegacao-cat"></div>-->
         <div class="clique-aqui">
             <div class="clique-texto">
-                <h2>Procurando saber como abrir seu próprio negócio de sucesso?</h2>
-                <p>Descubra algumas de nossas dicas para ajudar no seu sonho de empreender.</p>
+                <h1>Você tem na sua <span style="font-weight: bold;">estante</span></h1>
+                <h1>atualmente</h1>
+                <p></p>
+                <h2 style="font-size: 140px;">
+                    100 
+                    <span style="font-size: 40px; color: #212122;">livros!</span>
+                </h2>
+                <div class="h4-text">
+                    <h4>Adicione seus novos livros na sua</h4>
+                    <h4>estante virtual!</h4>
+                </div>
+                
                 <div class="clique-botao">
-                    <a href="dicas.html">
+                    <a href="addLivro.html">
                         <button>Clique aqui</button>
                     </a>
                 </div>
             </div>
-            <div class="clique-img">
-                <img src="imagens/jovem-linda-mulher-de-negocios-trabalhando-no-computador-em-um-cafe.jpg" alt="Mulher executiva">
+                <img src="ShelfyImagens/imagem.home1.png" alt="Mulher lendo um livro">
+        </div>
+        
+        <div class="container-desafios">
+            <div class="clique-desafios">
+                <h1>Seus desafios <strong>literários!</strong></h1>
+                <h2>Seus desafios ativos</h2>
+                <ul>
+                    <li>Um livro de A - Z</li>
+                    <li>Lendo os clássicos brasileiros</li>
+                </ul>
+                <p>Inicie mais um desafio e explore novas aventuras</p>
+                <div class="clique-botao-desafios">
+                    <a href="dicas.html">
+                        <button>Adicione um desafio</button>
+                    </a>
+                </div>
+            </div>
+            <img src="ShelfyImagens/imagem.home2.png" alt="Livros" class="desafios-img">
+        </div>
+
+        <div class="container-metas">
+            <h1>Minhas metas de <strong>leitura!</strong></h1>
+
+            <div class="metas">
+
+                <div class="meta">
+                    <div class="info">
+                        <p><strong>Minha meta de leitura do ano</strong></p>
+                        <p>Ler 100 livros</p>
+                        <div class="progress-bar">
+                            <div class="progress ano"></div>
+                        </div>
+                    </div>
+                    <img src="ShelfyImagens/imagem.home3.png" alt="Ícone de livros">
+                </div>
+
+                <div class="meta">
+                    <div class="info">
+                        <p><strong>Minha meta de leitura de Janeiro</strong></p>
+                        <p>Ler 5 livros de fantasia</p>
+                        <div class="progress-bar">
+                            <div class="progress mes"></div>
+                        </div>
+                    </div>
+                    <img src="ShelfyImagens/imagem.home3.png" alt="Ícone de livros">
+                </div>
             </div>
         </div>
 
         <section class="highlights">
-            <h2>Destaques</h2>
+            <h2>Meus favoritos</h2>
             <div class="slider-2">
                 <div class="slide-2">
-                    <a href="francine.html" class="card">
-                        <img src="imagens\destaques\greenchilli-fran-by-fr-03.webp" alt="Fran by Fran">
-                        <p>Fran by Fran: linha de cosméticos de Franciny Ehlke</p>
+                    <a href="orgulhoepreconceito.html" class="card">
+                        <img src="ShelfyImagens/Livros/Livro1.jpg" alt="Orgulho e Preconceito">
+                        <p>Orgulho e Preconceito</p>
                     </a>
-                    <a href="imaginarium.html" class="card">
-                        <img src="imagens\destaques\imaginarium.jpeg" alt="Imaginarium">
-                        <p>Imaginarium: empresa destaque no fun-design</p>
+                    <a href="L_1984.html" class="card">
+                        <img src="ShelfyImagens/Livros/1984.jpg" alt="1984 livro">
+                        <p>1984</p>
                     </a>
-                    <a href="alura.html" class="card">
-                        <img src="imagens\destaques\alura.png" alt="Alura">
-                        <p>Alura: a maior plataforma de cursos online de tecnologia</p>
+                    <a href="L_duna.html" class="card">
+                        <img src="ShelfyImagens/Livros/duna.jpg" alt="Duna">
+                        <p>Duna</p>
+                    </a>
+                    <a href="L_onomedovento.html" class="card">
+                        <img src="ShelfyImagens/Livros/o-nome-do-vento.jpg" alt="O nome do vento">
+                        <p>O nome do vento</p>
+                    </a>
+                    <a href="L_osoleparatodos.html" class="card">
+                        <img src="ShelfyImagens/Livros/o-sol-e-para-todos.jpg" alt="O sol é para todos">
+                        <p>O sol é para todos</p>
+                    </a>
+                    <a href="L_ohobbit.html" class="card">
+                        <img src="ShelfyImagens/Livros/o-hobbit.jpg" alt="O Hobbit">
+                        <p>O Hobbit</p>
                     </a>
                 </div>
                 <div class="slide-2">
-                    <a href="cacau.html" class="card">
-                        <img src="imagens\destaques\cacau-show-divulgacao-1.jpg" alt="Cacau Show">
-                        <p>Cacau Show: a maior rede de chocolates finos do mundo</p>
+                    <a href="L_dracula.html" class="card">
+                        <img src="ShelfyImagens/Livros/dracula.jpg" alt="Drácula">
+                        <p>Drácula</p>
                     </a>
-                    <a href="rock.html" class="card">
-                        <img src="imagens\destaques\Rock-in-Rio-30-Anos-2015.jpg" alt="Rock in Rio">
-                        <p>Rock in Rio: o maior festival de música do planeta</p>
+                    <a href="L_crimeecastigo.html" class="card">
+                        <img src="ShelfyImagens/Livros/crime-e-castigo.jpg" alt="Crime e castigo">
+                        <p>Crime e castigo</p>
                     </a>
-                    <a href="natura.html" class="card">
-                        <img src="imagens\destaques\natura ekos.jpeg" alt="Natura">
-                        <p>Natura: uma empresa destaque em cosméticos sustentáveis</p>
+                    <a href="L_cemanosdesolidao.html" class="card">
+                        <img src="ShelfyImagens/Livros/cem-anos-de-solidao.png" alt="Cem anos de solidão">
+                        <p>Cem anos de solidão</p>
+                    </a>
+                    <a href="L_ocontodaaia.html" class="card">
+                        <img src="ShelfyImagens/Livros/o-conto-da-aia.jpg" alt="O conto da aia">
+                        <p>O conto da aia</p>
+                    </a>
+                    <a href="L_arevolucaodosbichos.html" class="card">
+                        <img src="ShelfyImagens/Livros/revolucao-dos-bichos.jpg" alt="A revolução dos bichos">
+                        <p>A revolução dos bichos</p>
+                    </a>
+                    <a href="L_osenhordasmoscas.html" class="card">
+                        <img src="ShelfyImagens/Livros/o-senhor-das-moscas.jpg" alt="O senhor das moscas">
+                        <p>O senhor das moscas</p>
                     </a>
                 </div>
             </div>
@@ -161,7 +202,7 @@
     <footer>
     <div id="footer_content">
         <div id="footer_contacts">
-            <img src="imagens/logo.png" alt="Sementes do Brasil" class="footer-logo">
+            <img src="ShelfyImagens/LogoShelfy.png" alt="Shelfy logo" class="footer-logo">
         </div>
         
         <ul class="footer-list">
@@ -172,25 +213,28 @@
                 <a href="index.html" class="footer-link">Página Inicial</a>
             </li>
             <li>
-                <a href="conteudos.html" class="footer-link">Conteúdo</a>
+                <a href="biblioteca.html" class="footer-link">Biblioteca</a>
             </li>
             <li>
-                <a href="dicas.html" class="footer-link">Dicas</a>
+                <a href="addLivro.html" class="footer-link">Adicionar livro</a>
             </li>
             <li>
-                <a href="sobre.html" class="footer-link">Sobre nós</a>
+                <a href="metas_desafios.html" class="footer-link">Metas e Desafios</a>
+            </li>
+            <li>
+                <a href="sobre.html" class="footer-link">Sobre o Shelfy</a>
             </li>
         </ul>
 
         <div class="footer_subscribe">
             <h3>Fale conosco</h3>
             <p>Contato: (74) 9 9999-9999</p>
-            <p>E-mail: sementesdobrasil@gmail.com</p>
+            <p>E-mail: shelfy@gmail.com</p>
         </div>
     </div>
 
     <div id="footer_copyright">
-        &#169; 2024 direitos reservados
+        &#169; 2025 direitos reservados
     </div>
 </footer>
 
